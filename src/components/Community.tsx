@@ -3,7 +3,11 @@ import "../styles/app.css";
 
 export const Community: React.FC = () => {
   const handleJoinClick = () => {
-    window.open("https://forms.gle/RPX9nJ5iyHW1Nhcs9", "_blank", "noopener,noreferrer");
+    window.open(
+      "https://forms.gle/RPX9nJ5iyHW1Nhcs9",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
@@ -11,15 +15,18 @@ export const Community: React.FC = () => {
       <h3 className="section-title">Присоединяйся</h3>
 
       <div className="card glass community-card">
-        <p>
+        <p className="community-text">
           Хочешь создавать игры вместе с нами? Стань частью GameLab.
         </p>
 
-        <button className="btn" onClick={handleJoinClick}>
+        <button 
+          className="btn" 
+          onClick={handleJoinClick}
+          aria-label="Открыть форму присоединения"
+        >
           Вступить
         </button>
       </div>
     </section>
   );
 };
-

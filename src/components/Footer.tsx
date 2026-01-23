@@ -1,13 +1,42 @@
 import React from "react";
 import "../styles/app.css";
 
-
 export const Footer: React.FC = () => {
-return (
-<footer>
-<div className="container">
-© {new Date().getFullYear()} GameLab — Indie Game Community
-</div>
-</footer>
-);
+  return (
+    <footer>
+      <div className="container">
+        <div className="footer-content">
+          © {new Date().getFullYear()} GameLab — Indie Game Community
+        </div>
+
+        <div className="social-links">
+          <a
+            href="https://instagram.com/gamelab_kg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn"
+            aria-label="Наш Instagram"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.645.069-4.849.069-3.205 0-3.584-.012-4.849-.069-3.259-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://t.me/gamelab_hub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn"
+            aria-label="Наш Telegram"
+            title="Telegram"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.54-.203 1.01.128.84.951z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 };

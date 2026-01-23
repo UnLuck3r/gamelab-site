@@ -7,19 +7,17 @@ import { Community } from "./components/Community";
 import { Footer } from "./components/Footer";
 import "./styles/app.css";
 
-
 const App: React.FC = () => {
-return (
-<>
-<Header />
-<Hero />
-<About />
-<Games />
-<Community />
-<Footer />
-</>
-);
+  return (
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Games />
+      <Community />
+      <Footer />
+    </>
+  );
 };
-
 
 export default App;
