@@ -1,19 +1,25 @@
 import React from "react";
 import "../styles/app.css";
 
-
 export const Community: React.FC = () => {
-return (
-<section id="community" className="container">
-<h3 className="section-title">Присоединяйся 🤝</h3>
-<div className="card" style={{ background: "var(--sand)" }}>
-<p style={{ marginBottom: 16 }}>
-Хочешь делать игры вместе с нами? Присоединяйся к GameLab!
-</p>
-<button className="btn" style={{ background: "var(--primary)", color: "white" }}>
-Вступить в сообщество
-</button>
-</div>
-</section>
-);
+  const handleJoinClick = () => {
+    window.open("https://forms.gle/RPX9nJ5iyHW1Nhcs9", "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <section id="community" className="container">
+      <h3 className="section-title">Присоединяйся</h3>
+
+      <div className="card glass community-card">
+        <p>
+          Хочешь создавать игры вместе с нами? Стань частью GameLab.
+        </p>
+
+        <button className="btn" onClick={handleJoinClick}>
+          Вступить
+        </button>
+      </div>
+    </section>
+  );
 };
+

@@ -9,11 +9,11 @@ export const games: Game[] = [
 {
 title: "Demo Game 1",
 url: "https://itch.io",
-description: "Пример игры из GameLab",
+description: "Инди-игра от GameLab",
 },
 {
 title: "Demo Game 2",
 url: "https://itch.io",
-description: "Ещё одна игра",
+description: "Экспериментальный проект",
 },
 ];

@@ -4,11 +4,15 @@ import "../styles/app.css";
 
 export const Hero: React.FC = () => {
 return (
-<section style={{ background: "var(--sand)", textAlign: "center" }} className="container">
-<h2 style={{ fontSize: 42, marginBottom: 16 }}>Мы создаём игры 🚀</h2>
-<p style={{ fontSize: 18, maxWidth: 700, margin: "0 auto" }}>
-GameLab — сообщество разработчиков игр, дизайнеров и энтузиастов.
+<section className="container">
+<h2 className="hero-title">
+Создаём <span className="hero-gradient">игры</span> и идеи
+</h2>
+<p style={{ fontSize: 20, maxWidth: 720, marginTop: 20, opacity: 0.8 }}>
+GameLab — современное сообщество разработчиков, дизайнеров и гейм-дев энтузиастов.
 </p>
+<div style={{ marginTop: 32 }}>
+</div>
 </section>
 );
 };
