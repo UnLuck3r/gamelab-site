@@ -9,18 +9,18 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "Как начать разработку игры на Unity",
+    title: "Как написать сценарий к игре",
     excerpt: "Полное руководство для начинающих разработчиков. Узнайте, как установить Unity, создать первый проект и сделать простую игру.",
-    url: "https://example.com/unity-guide",
+    url: "https://docs.google.com/document/d/1wurIL3cxRBhrgpx2RsWeXA9MV50MTjCe-TCDGUssoYM",
     image: "https://via.placeholder.com/400x250?text=Unity+Guide",
     category: "Разработка",
     date: "15 января 2026",
   },
   {
-    title: "Тренды в инди-играх 2026",
-    excerpt: "Анализируем самые популярные жанры и стили инди-игр в этом году. Какие игры выбирают игроки и почему?",
-    url: "https://example.com/indie-trends",
-    image: "https://via.placeholder.com/400x250?text=Indie+Trends",
+    title: "Secondary belief — о важности веры игрока в происходящий вымысел",
+    excerpt: "Часто говорят: «Игра существует только в в голове игрока». А таСмелое заявление, заметит читатель, — звучит как типичное утверждение взятое из воздуха.",
+    url: "https://docs.google.com/document/d/1MFXTvNXvBuXFZBrdUUa9fJZSItF2wM1c",
+    image: "https://via.placeholder.com/400x250?text=Secondary+Belief",
     category: "Новости",
     date: "12 января 2026",
   },
