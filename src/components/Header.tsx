@@ -23,6 +23,7 @@ export const Header: React.FC = () => {
         <nav>
           <a href="#about" onClick={handleNavClick}>О нас</a>
           <a href="#games" onClick={handleNavClick}>Игры</a>
+          <a href="#articles" onClick={handleNavClick}>Статьи</a>
           <a href="#community" onClick={handleNavClick}>Вступить</a>
         </nav>
       </div>

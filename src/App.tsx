@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Games } from "./components/Games";
+import { Articles } from "./components/Articles";
 import { Community } from "./components/Community";
 import { Footer } from "./components/Footer";
 import "./styles/app.css";
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Games />
+      <Articles />
       <Community />
       <Footer />
     </>
