@@ -5,11 +5,11 @@ export const Hero: React.FC = () => {
   return (
     <section className="container">
       <h2 className="hero-title">
-        Создаём <span className="hero-gradient">игры</span> и идеи
+        Играем, веселимся и иногда делаем <span className="hero-gradient">игры</span>
       </h2>
       <p className="hero-subtitle">
-        GameLab — современное сообщество разработчиков, дизайнеров 
-        и гейм-дев энтузиастов в Кыргызстане.
+        GameLab — это место, где можно поиграть во что угодно, найти своих людей
+        и вместе придумать что-нибудь интересное.
       </p>
     </section>
   );

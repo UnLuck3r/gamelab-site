@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Games } from "./components/Games";
+import { Hackathons } from "./components/Hackathons";
 import { Articles } from "./components/Articles";
 import { Community } from "./components/Community";
 import { Footer } from "./components/Footer";
@@ -13,10 +14,11 @@ const App: React.FC = () => {
     <>
       <Header />
       <Hero />
+      <Community />
       <About />
       <Games />
+      <Hackathons />
       <Articles />
-      <Community />
       <Footer />
     </>
   );

@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
     <footer>
       <div className="container">
         <div className="footer-content">
-          © {new Date().getFullYear()} GameLab — GameDev Community in Kyrgyzstan
+          © {new Date().getFullYear()} GameLab — играем и делаем игры вместе
         </div>
 
         <div className="social-links">

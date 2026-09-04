@@ -5,7 +5,7 @@ import "../styles/app.css";
 export const Games: React.FC = () => {
   return (
     <section id="games" className="container">
-      <h3 className="section-title">Игры GameLab</h3>
+      <h3 className="section-title">Во что мы играем</h3>
       <div className="grid-games">
         {games.length > 0 ? (
           games.map((game, index) => (

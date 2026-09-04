@@ -64,6 +64,12 @@ header {
 }
 
 /* Logo */
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .logo-block {
   display: flex;
   align-items: center;
@@ -83,6 +89,18 @@ header {
   font-weight: 800;
   letter-spacing: -0.02em;
   white-space: nowrap;
+}
+
+.logo-block h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.alatoo-brand {
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
 }
 
 /* Navigation */
@@ -439,18 +457,62 @@ p {
 }
 
 /* ================= COMMUNITY ================= */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.hackathons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.hackathon-card {
+  max-width: 760px;
+}
+
 .community-card {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 24px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .community-card p {
   font-size: 18px;
   max-width: 500px;
   color: var(--text-muted);
+  align-self: stretch;
+}
+
+.join-card-image {
+  width: min(68%, 380px);
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.community-card .btn {
+  padding: 16px 36px;
+  font-size: 15px;
+}
+
+.mascot-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mascot-card-image {
+  width: 100%;
+  min-height: 180px;
+  flex: 1;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* ================= FOOTER ================= */
@@ -555,6 +617,18 @@ footer .container {
   .logo-block h1 {
     font-size: 18px;
   }
+
+  .brand-block {
+    gap: 16px;
+  }
+
+  .alatoo-brand {
+    padding-left: 16px;
+  }
+
+  .logo-block h2 {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -571,6 +645,19 @@ footer .container {
   .logo-block {
     flex: 1;
     order: 1;
+  }
+
+  .brand-block {
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .alatoo-brand {
+    padding-left: 12px;
+  }
+
+  .logo-block h2 {
+    white-space: normal;
   }
 
   nav {
@@ -650,6 +737,15 @@ footer .container {
   .community-card {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
+  }
+
+  .join-card-image {
+    align-self: center;
+  }
+
+  .community-grid {
+    grid-template-columns: 1fr;
   }
 
   .community-card p {
